@@ -188,7 +188,7 @@ class FacilityDetailViewController: RankeetViewController {
             self.lightingViewLabel.text = "HAY UN PARTIDO EN JUEGO!"
             self.lightingViewImage.image = UIImage(named:"ball")
         }else{
-            self.lightingViewLabel.text = "NO HAY NINGÚN PARITDO EN JUEGO"
+            self.lightingViewLabel.text = "NO HAY PARTIDOS"
             self.lightingViewImage.image = nil
         }
         

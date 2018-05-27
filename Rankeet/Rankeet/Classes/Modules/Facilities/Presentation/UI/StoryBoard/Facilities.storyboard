@@ -610,7 +610,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="1100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HjG-sc-Sac">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1557"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1549"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TS4-nG-hxK">
                                                 <rect key="frame" x="20" y="14" width="335" height="32"/>
@@ -642,13 +642,13 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQG-gi-V2p">
-                                                <rect key="frame" x="20" y="62" width="305" height="0.0"/>
+                                                <rect key="frame" x="20" y="54" width="305" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
                                                 <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kZ-0d-aVS">
-                                                <rect key="frame" x="20" y="72" width="305" height="19"/>
+                                                <rect key="frame" x="20" y="64" width="305" height="19"/>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
                                                 <state key="normal" image="icnArrowSeefields.png">
                                                     <color key="titleColor" red="0.062745098039215685" green="0.80000000000000004" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -658,13 +658,13 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbE-O0-l3L">
-                                                <rect key="frame" x="20" y="101" width="305" height="0.0"/>
+                                                <rect key="frame" x="20" y="93" width="305" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <color key="textColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fds-L8-Aat">
-                                                <rect key="frame" x="0.0" y="123" width="375" height="27"/>
+                                                <rect key="frame" x="0.0" y="115" width="375" height="27"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="K0h-DT-Nux">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="27"/>
@@ -685,13 +685,13 @@
                                                 </constraints>
                                             </scrollView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="RETIRO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNt-dr-1zj">
-                                                <rect key="frame" x="20" y="178" width="305" height="21"/>
+                                                <rect key="frame" x="20" y="170" width="305" height="21"/>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                 <color key="textColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="EgR-9n-3zL">
-                                                <rect key="frame" x="20" y="209" width="335" height="29"/>
+                                                <rect key="frame" x="20" y="201" width="335" height="29"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icnTransportUnderground.png" translatesAutoresizingMaskIntoConstraints="NO" id="HCO-nG-dGi">
                                                         <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -728,7 +728,7 @@
                                                 </constraints>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="vyv-IW-1Vf">
-                                                <rect key="frame" x="20" y="253" width="335" height="29"/>
+                                                <rect key="frame" x="20" y="245" width="335" height="29"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icnTransportBus.png" translatesAutoresizingMaskIntoConstraints="NO" id="bPg-Sc-4cN">
                                                         <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -765,7 +765,7 @@
                                                 </constraints>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Mpl-oU-152">
-                                                <rect key="frame" x="20" y="297" width="335" height="29"/>
+                                                <rect key="frame" x="20" y="289" width="335" height="29"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icnTransportUnderground.png" translatesAutoresizingMaskIntoConstraints="NO" id="8cB-fm-fQb">
                                                         <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -801,13 +801,13 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0Y-R3-NBh">
-                                                <rect key="frame" x="20" y="336" width="305" height="0.0"/>
+                                                <rect key="frame" x="20" y="328" width="305" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                                 <color key="textColor" red="0.60777515172958374" green="0.60788232088088989" blue="0.60776835680007935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBQ-DH-lcP">
-                                                <rect key="frame" x="20" y="426" width="335" height="100"/>
+                                                <rect key="frame" x="20" y="418" width="335" height="100"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="@facility_sport_selection" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEU-XE-gEa">
                                                         <rect key="frame" x="0.0" y="0.0" width="335" height="23.5"/>
@@ -863,7 +863,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZhW-o2-bee">
-                                                <rect key="frame" x="20" y="556" width="335" height="28.5"/>
+                                                <rect key="frame" x="20" y="548" width="335" height="28.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icnTimeLightonyourfield.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jgx-PB-AUn">
                                                         <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -890,7 +890,7 @@
                                                 </constraints>
                                             </view>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3A-XS-2QQ">
-                                                <rect key="frame" x="0.0" y="599.5" width="375" height="60"/>
+                                                <rect key="frame" x="0.0" y="591.5" width="375" height="60"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="brI-Bz-f3z">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -911,7 +911,7 @@
                                                 </constraints>
                                             </scrollView>
                                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOm-QC-D1b">
-                                                <rect key="frame" x="0.0" y="599.5" width="375" height="60"/>
+                                                <rect key="frame" x="0.0" y="591.5" width="375" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@facility_detail_loading_start_hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVf-qO-dEK">
                                                         <rect key="frame" x="0.0" y="0.5" width="375" height="59"/>
@@ -948,7 +948,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHR-Qo-p4m">
-                                                <rect key="frame" x="20" y="689.5" width="335" height="52"/>
+                                                <rect key="frame" x="20" y="681.5" width="335" height="52"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icnHowtimeLightonyourfiled.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fnl-4B-7DD">
                                                         <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -984,7 +984,7 @@
                                                 </constraints>
                                             </view>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOj-fi-B9c">
-                                                <rect key="frame" x="0.0" y="756.5" width="375" height="60"/>
+                                                <rect key="frame" x="0.0" y="748.5" width="375" height="60"/>
                                                 <subviews>
                                                     <stackView opaque="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="750" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="asr-YZ-Z6Y">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -1005,7 +1005,7 @@
                                                 </constraints>
                                             </scrollView>
                                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXh-h8-wi9">
-                                                <rect key="frame" x="0.0" y="756.5" width="375" height="60"/>
+                                                <rect key="frame" x="0.0" y="748.5" width="375" height="60"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@facility_detail_loading_end_hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8d-Dy-M4I">
                                                         <rect key="frame" x="0.0" y="0.5" width="375" height="59"/>
@@ -1042,24 +1042,24 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="@facility_detail_select_field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2q6-8w-xlW">
-                                                <rect key="frame" x="20" y="851.5" width="335" height="23.5"/>
+                                                <rect key="frame" x="20" y="843.5" width="335" height="23.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
                                                 <color key="textColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qyf-Ud-cng">
-                                                <rect key="frame" x="20" y="895" width="335" height="0.0"/>
+                                                <rect key="frame" x="20" y="887" width="335" height="0.0"/>
                                                 <color key="backgroundColor" red="0.19556236269999999" green="0.61403977870000004" blue="0.49132126570000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Isk-EM-9X8">
-                                                <rect key="frame" x="183.5" y="925" width="8" height="17"/>
+                                                <rect key="frame" x="183.5" y="917" width="8" height="17"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <state key="normal" image="icnArrowSeefields.png">
                                                     <color key="titleColor" red="0.062745098039215685" green="0.80000000000000004" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9F-wN-D2O">
-                                                <rect key="frame" x="0.0" y="977" width="375" height="480"/>
+                                                <rect key="frame" x="0.0" y="969" width="375" height="480"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listado de partidos para hoy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYB-ad-71E">
                                                         <rect key="frame" x="24" y="0.0" width="282" height="23.5"/>
@@ -1387,7 +1387,7 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Quieres crear un nuevo partido?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtT-6x-chI">
-                                                <rect key="frame" x="20" y="351" width="335" height="31.5"/>
+                                                <rect key="frame" x="20" y="343" width="335" height="31.5"/>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="24"/>
                                                 <color key="textColor" red="0.057667531073093414" green="0.80113822221755981" blue="0.82016474008560181" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1413,7 +1413,7 @@
                                             <constraint firstItem="l0Y-R3-NBh" firstAttribute="top" secondItem="Mpl-oU-152" secondAttribute="bottom" constant="10" id="9RO-75-RAB"/>
                                             <constraint firstItem="WtT-6x-chI" firstAttribute="top" secondItem="l0Y-R3-NBh" secondAttribute="bottom" constant="15" id="9oZ-OE-Ro2"/>
                                             <constraint firstItem="Mpl-oU-152" firstAttribute="leading" secondItem="HjG-sc-Sac" secondAttribute="leading" constant="20" id="AAK-dO-uiW"/>
-                                            <constraint firstItem="YQG-gi-V2p" firstAttribute="top" secondItem="TS4-nG-hxK" secondAttribute="bottom" constant="16" id="AFR-nu-mIB"/>
+                                            <constraint firstItem="YQG-gi-V2p" firstAttribute="top" secondItem="TS4-nG-hxK" secondAttribute="bottom" constant="8" id="AFR-nu-mIB"/>
                                             <constraint firstAttribute="trailing" secondItem="K3A-XS-2QQ" secondAttribute="trailing" id="Ajh-DH-jzq"/>
                                             <constraint firstItem="l9F-wN-D2O" firstAttribute="top" secondItem="Isk-EM-9X8" secondAttribute="bottom" constant="35" id="DSR-pj-q0c"/>
                                             <constraint firstAttribute="trailing" secondItem="2q6-8w-xlW" secondAttribute="trailing" constant="20" id="HOK-j0-PpL"/>
