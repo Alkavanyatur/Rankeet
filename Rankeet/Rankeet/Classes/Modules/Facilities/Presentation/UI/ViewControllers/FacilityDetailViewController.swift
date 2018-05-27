@@ -177,7 +177,7 @@ class FacilityDetailViewController: RankeetViewController {
     //
     // MARK: - Body methods
     //
-    func setupBodyView(currentFacility:AlFacility, currentLat:Double?, currentLng:Double?){
+    func setupBodyView(currentFacility:AlFacility, currentLat:Double?, currentLong:Double?){
         self.configureMainInformation(currentFacility: currentFacility,currentLat:currentLat,currentLong:currentLong)
     }
     
