@@ -255,9 +255,7 @@
 		AB80EA9C20B95069009173B9 /* FacilityFlexibleHeaderContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8C620B95067009173B9 /* FacilityFlexibleHeaderContainerViewController.swift */; };
 		AB80EA9D20B95069009173B9 /* SearchFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8C720B95067009173B9 /* SearchFiltersViewController.swift */; };
 		AB80EA9E20B95069009173B9 /* FacilitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8C820B95067009173B9 /* FacilitiesViewController.swift */; };
-		AB80EA9F20B95069009173B9 /* FacilitySummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8C920B95067009173B9 /* FacilitySummaryViewController.swift */; };
 		AB80EAA020B95069009173B9 /* FacilityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8CA20B95067009173B9 /* FacilityDetailViewController.swift */; };
-		AB80EAA120B95069009173B9 /* FacilityFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8CB20B95067009173B9 /* FacilityFeedbackViewController.swift */; };
 		AB80EAA220B95069009173B9 /* FacilityMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8CD20B95067009173B9 /* FacilityMapView.swift */; };
 		AB80EAA320B95069009173B9 /* FacilityDetailFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8CE20B95067009173B9 /* FacilityDetailFieldView.swift */; };
 		AB80EAA420B95069009173B9 /* FacilityDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8CF20B95067009173B9 /* FacilityDetailHeaderView.swift */; };
@@ -274,11 +272,9 @@
 		AB80EAAF20B95069009173B9 /* AlFacilityPoiAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8DA20B95067009173B9 /* AlFacilityPoiAnnotationView.swift */; };
 		AB80EAB020B95069009173B9 /* FacilitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8DB20B95067009173B9 /* FacilitiesCollectionViewCell.swift */; };
 		AB80EAB120B95069009173B9 /* FacilityDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8DD20B95067009173B9 /* FacilityDetailPresenter.swift */; };
-		AB80EAB220B95069009173B9 /* FacilityFeedbackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8DE20B95067009173B9 /* FacilityFeedbackPresenter.swift */; };
 		AB80EAB320B95069009173B9 /* ChangeLocationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8DF20B95067009173B9 /* ChangeLocationPresenter.swift */; };
 		AB80EAB420B95069009173B9 /* SportsSelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8E020B95067009173B9 /* SportsSelectionPresenter.swift */; };
 		AB80EAB520B95069009173B9 /* FacilitiesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8E120B95067009173B9 /* FacilitiesPresenter.swift */; };
-		AB80EAB620B95069009173B9 /* FacilitySummaryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8E220B95067009173B9 /* FacilitySummaryPresenter.swift */; };
 		AB80EAB720B95069009173B9 /* SearchFiltersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8E320B95067009173B9 /* SearchFiltersPresenter.swift */; };
 		AB80EAB820B95069009173B9 /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB80E8E720B95067009173B9 /* OnboardingManager.swift */; };
 		AB80EAB920B95069009173B9 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB80E8EC20B95067009173B9 /* Onboarding.storyboard */; };
@@ -618,9 +614,7 @@
 		AB80E8C620B95067009173B9 /* FacilityFlexibleHeaderContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilityFlexibleHeaderContainerViewController.swift; sourceTree = "<group>"; };
 		AB80E8C720B95067009173B9 /* SearchFiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFiltersViewController.swift; sourceTree = "<group>"; };
 		AB80E8C820B95067009173B9 /* FacilitiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilitiesViewController.swift; sourceTree = "<group>"; };
-		AB80E8C920B95067009173B9 /* FacilitySummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilitySummaryViewController.swift; sourceTree = "<group>"; };
 		AB80E8CA20B95067009173B9 /* FacilityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilityDetailViewController.swift; sourceTree = "<group>"; };
-		AB80E8CB20B95067009173B9 /* FacilityFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilityFeedbackViewController.swift; sourceTree = "<group>"; };
 		AB80E8CD20B95067009173B9 /* FacilityMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilityMapView.swift; sourceTree = "<group>"; };
 		AB80E8CE20B95067009173B9 /* FacilityDetailFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilityDetailFieldView.swift; sourceTree = "<group>"; };
 		AB80E8CF20B95067009173B9 /* FacilityDetailHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilityDetailHeaderView.swift; sourceTree = "<group>"; };
@@ -637,11 +631,9 @@
 		AB80E8DA20B95067009173B9 /* AlFacilityPoiAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlFacilityPoiAnnotationView.swift; sourceTree = "<group>"; };
 		AB80E8DB20B95067009173B9 /* FacilitiesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilitiesCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB80E8DD20B95067009173B9 /* FacilityDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilityDetailPresenter.swift; sourceTree = "<group>"; };
-		AB80E8DE20B95067009173B9 /* FacilityFeedbackPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilityFeedbackPresenter.swift; sourceTree = "<group>"; };
 		AB80E8DF20B95067009173B9 /* ChangeLocationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeLocationPresenter.swift; sourceTree = "<group>"; };
 		AB80E8E020B95067009173B9 /* SportsSelectionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportsSelectionPresenter.swift; sourceTree = "<group>"; };
 		AB80E8E120B95067009173B9 /* FacilitiesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilitiesPresenter.swift; sourceTree = "<group>"; };
-		AB80E8E220B95067009173B9 /* FacilitySummaryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacilitySummaryPresenter.swift; sourceTree = "<group>"; };
 		AB80E8E320B95067009173B9 /* SearchFiltersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFiltersPresenter.swift; sourceTree = "<group>"; };
 		AB80E8E720B95067009173B9 /* OnboardingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
 		AB80E8EC20B95067009173B9 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
@@ -1742,9 +1734,7 @@
 				AB80E8C620B95067009173B9 /* FacilityFlexibleHeaderContainerViewController.swift */,
 				AB80E8C720B95067009173B9 /* SearchFiltersViewController.swift */,
 				AB80E8C820B95067009173B9 /* FacilitiesViewController.swift */,
-				AB80E8C920B95067009173B9 /* FacilitySummaryViewController.swift */,
 				AB80E8CA20B95067009173B9 /* FacilityDetailViewController.swift */,
-				AB80E8CB20B95067009173B9 /* FacilityFeedbackViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -1777,11 +1767,9 @@
 			isa = PBXGroup;
 			children = (
 				AB80E8DD20B95067009173B9 /* FacilityDetailPresenter.swift */,
-				AB80E8DE20B95067009173B9 /* FacilityFeedbackPresenter.swift */,
 				AB80E8DF20B95067009173B9 /* ChangeLocationPresenter.swift */,
 				AB80E8E020B95067009173B9 /* SportsSelectionPresenter.swift */,
 				AB80E8E120B95067009173B9 /* FacilitiesPresenter.swift */,
-				AB80E8E220B95067009173B9 /* FacilitySummaryPresenter.swift */,
 				AB80E8E320B95067009173B9 /* SearchFiltersPresenter.swift */,
 			);
 			path = Presenter;
@@ -2401,7 +2389,6 @@
 				AB80EAA520B95069009173B9 /* LocationReminderTableViewCell.swift in Sources */,
 				AB80EA4220B95068009173B9 /* NotificationsViewController.swift in Sources */,
 				AB80EA9B20B95069009173B9 /* SportSelectionViewController.swift in Sources */,
-				AB80EAA120B95069009173B9 /* FacilityFeedbackViewController.swift in Sources */,
 				AB80E90020B95068009173B9 /* DevDefines.swift in Sources */,
 				AB80EA7C20B95069009173B9 /* MainStructureViewController.swift in Sources */,
 				AB80EAA720B95069009173B9 /* ChangeLocationTableViewCell.swift in Sources */,
@@ -2417,7 +2404,6 @@
 				AB80EA9820B95069009173B9 /* AlLightReservation.swift in Sources */,
 				AB80EA9220B95069009173B9 /* AlFacility.swift in Sources */,
 				AB80EA9E20B95069009173B9 /* FacilitiesViewController.swift in Sources */,
-				AB80EAB620B95069009173B9 /* FacilitySummaryPresenter.swift in Sources */,
 				AB80EA2F20B95068009173B9 /* Reach.swift in Sources */,
 				AB80EA3120B95068009173B9 /* Better_localization_localizableextension.swift in Sources */,
 				AB80EA7520B95069009173B9 /* ProfileFlexibleHeaderContainerViewController.swift in Sources */,
@@ -2426,7 +2412,6 @@
 				AB80EA6B20B95069009173B9 /* FavouritesHeaderView.swift in Sources */,
 				AB80EA3A20B95068009173B9 /* NSLayoutConstraintMultiplierExtension.swift in Sources */,
 				AB80EA4620B95068009173B9 /* SplashManager.swift in Sources */,
-				AB80EAB220B95069009173B9 /* FacilityFeedbackPresenter.swift in Sources */,
 				AB80EA8F20B95069009173B9 /* FacilititesDataProvider.swift in Sources */,
 				AB80EA4820B95068009173B9 /* ConfigSports.swift in Sources */,
 				AB80E8FF20B95068009173B9 /* RankeetDefines.swift in Sources */,
@@ -2441,7 +2426,6 @@
 				AB80EA9520B95069009173B9 /* AlImage.swift in Sources */,
 				AB80EA9C20B95069009173B9 /* FacilityFlexibleHeaderContainerViewController.swift in Sources */,
 				AB80EA4420B95068009173B9 /* LocationDataProvider.swift in Sources */,
-				AB80EA9F20B95069009173B9 /* FacilitySummaryViewController.swift in Sources */,
 				AB80EAB420B95069009173B9 /* SportsSelectionPresenter.swift in Sources */,
 				AB80EA7D20B95069009173B9 /* MainStructurePresenter.swift in Sources */,
 				AB80EA9A20B95069009173B9 /* ChangeLocationViewController.swift in Sources */,

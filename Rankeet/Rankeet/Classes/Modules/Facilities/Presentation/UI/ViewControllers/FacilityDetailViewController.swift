@@ -21,13 +21,12 @@ protocol FacilityDetailViewControllerDelegate: NSObjectProtocol {
 class FacilityDetailViewController: RankeetViewController {
 
     weak var delegate: FacilityDetailViewControllerDelegate?
- 
+    
+    @IBOutlet weak var labelTitleCreate: UILabel!
+    
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var scrollview: UIScrollView!
     var headerViewController: MDCFlexibleHeaderViewController!
-    
-    @IBOutlet weak var nearFacilitiesCollection: UICollectionView!
-    var currentNearFacilities:[AlFacility] = []
     
     @IBOutlet weak var lightingView: UIView!
     @IBOutlet weak var lightingViewImage: UIImageView!
@@ -108,7 +107,6 @@ class FacilityDetailViewController: RankeetViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.configureCollectionView()
         
         if self.fromOnboarding {
             self.heightNearFacilities.constant = 0.0
@@ -185,18 +183,13 @@ class FacilityDetailViewController: RankeetViewController {
     
     func configureMainInformation(currentFacility:AlFacility,currentLat:Double?, currentLong:Double?){
         
-        if let result = self.facilityDetailPresenter?.isRankeetLightingInFacility(currentFacility: currentFacility), result == true{
-            if let result = self.facilityDetailPresenter?.isRankeetLightingOnInFacility(currentFacility: currentFacility), result == true{
-                self.lightingViewLabel.text = String.facility_cell_typology_Rankeet_lighting_on
-                self.lightingViewImage.image = UIImage(named:"imgCardLightson")
-            }else{
-                self.lightingViewLabel.text = String.facility_cell_typology_Rankeet_lighting_off
-                self.lightingViewImage.image = UIImage(named:"imgCardLightsoff")
-            }
+        let num:Int = Int(arc4random_uniform(10))
+        if num > 5 {
+            self.lightingViewLabel.text = "HAY UN PARTIDO EN JUEGO!"
+            self.lightingViewImage.image = UIImage(named:"ball")
         }else{
+            self.lightingViewLabel.text = "NO HAY NINGÚN PARITDO EN JUEGO"
             self.lightingViewImage.image = nil
-            self.lightingViewLabel.text = String.facility_cell_typology_no_Rankeet
-            self.lightingViewLabel.textColor = RankeetDefines.Colors.warmGrey
         }
         
         if let currentLat = currentLat, let currentLong = currentLong{
@@ -523,6 +516,7 @@ extension FacilityDetailViewController: FacilityDetailPresenterDelegate{
             self.scrollEnds.isHidden = true
             self.viewTitleFields.isHidden = true
             self.viewSportSelection.isHidden = true
+            self.labelTitleCreate.isHidden = true
             
             self.fieldsToDescriptionConstraints.priority = UILayoutPriority(rawValue: 1000)
             self.fieldsToTitleConstraints.priority = UILayoutPriority(rawValue: 900)
@@ -575,16 +569,16 @@ extension FacilityDetailViewController: FacilityDetailPresenterDelegate{
     
     func configureFieldNotAvailableState(currentView:FacilityDetailFieldView,isSelected:Bool){
         currentView.buttonAction.isEnabled = false
-        currentView.stateField.text = String.facility_detail_state_not_available
-        currentView.imageField.image = UIImage(named:"imgSmallcardLightsoff")
+        currentView.stateField.text = "EL CAMPO NO ESTÁ DISPONIBLE"
+        currentView.imageField.image = UIImage(named:"ball")
         currentView.alpha = 0.5
         self.configureViewWithSelectedState(currentView: currentView, isSelected: isSelected)
     }
     
     func configureFieldNotAvailableStateBooked(currentView:FacilityDetailFieldView,isSelected:Bool){
         currentView.buttonAction.isEnabled = false
-        currentView.stateField.text = String.facility_detail_state_booked
-        currentView.imageField.image = UIImage(named:"imgSmallcardLightson")
+        currentView.stateField.text = "YA HAY UN PARTIDO EN EL CAMPO"
+        currentView.imageField.image = UIImage(named:"ball")
         self.configureViewWithSelectedState(currentView: currentView, isSelected: isSelected)
     }
     
@@ -594,8 +588,8 @@ extension FacilityDetailViewController: FacilityDetailPresenterDelegate{
         currentView.titleView.textColor = RankeetDefines.Colors.aquaBlue
         currentView.contentView.layer.borderColor = RankeetDefines.Colors.aquaBlue.cgColor
         currentView.buttonAction.isEnabled = true
-        currentView.stateField.text = String.facility_detail_state_available
-        currentView.imageField.image = UIImage(named:"imgSmallcardLightsoff")
+        currentView.stateField.text = "CAMPO DISPONIBLE"
+        currentView.imageField.image = UIImage(named:"ball")
         self.configureViewWithSelectedState(currentView: currentView, isSelected: isSelected)
     }
     
@@ -605,23 +599,22 @@ extension FacilityDetailViewController: FacilityDetailPresenterDelegate{
         currentView.titleView.textColor = RankeetDefines.Colors.aquaBlue
         currentView.contentView.layer.borderColor = RankeetDefines.Colors.aquaBlue.cgColor
         currentView.buttonAction.isEnabled = true
-        currentView.stateField.text = String.facility_detail_state_available_turn_on
-        currentView.imageField.image = UIImage(named:"imgSmallcardLightson")
+        currentView.stateField.text = "CAMPO DISPONIBLE"
+        currentView.imageField.image = UIImage(named:"ball")
         self.configureViewWithSelectedState(currentView: currentView, isSelected: isSelected)
     }
     
     func configureViewWithSelectedState(currentView:FacilityDetailFieldView,isSelected:Bool){
         if isSelected {
             currentView.contentView.backgroundColor = RankeetDefines.Colors.aquaBlue
-            currentView.imageField.image = UIImage(named:"imgSmallcardLightsonWhite")
+            currentView.imageField.image = UIImage(named:"ball")
             currentView.titleView.textColor = UIColor.white
             currentView.stateField.textColor = UIColor.white
         }
     }
     
     func loadNearFacilities(currentFacilities:[AlFacility]){
-        self.currentNearFacilities = currentFacilities
-        self.nearFacilitiesCollection.reloadData()
+
     }
 }
 
@@ -631,50 +624,6 @@ extension FacilityDetailViewController : FacilityDetailFieldViewDelegate {
             self.facilityDetailPresenter?.selectField(currentfield:currentField)
             self.checkResumLabel()
         }
-    }
-}
-
-//
-// MARK: - Collectionview methods
-//
-
-extension FacilityDetailViewController : UICollectionViewDataSource, UICollectionViewDelegate {
-    
-    func configureCollectionView(){
-        self.nearFacilitiesCollection.delegate = self
-        self.nearFacilitiesCollection.dataSource = self
-        
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 0.0, left: CGFloat(DevDefines.Metrics.insetNearFacilities), bottom: 0.0, right: CGFloat(DevDefines.Metrics.insetNearFacilities))
-        layout.itemSize = CGSize(width: 320.0, height: self.nearFacilitiesCollection.frame.size.height)
-        layout.minimumInteritemSpacing = 0.0
-        layout.scrollDirection = .horizontal
-        
-        self.nearFacilitiesCollection.collectionViewLayout = layout
-        self.nearFacilitiesCollection.register(UINib(nibName: "FacilitiesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "FacilitiesCollectionViewCell")
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.currentNearFacilities.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.facilityDetailPresenter?.selectFacilityDetail(currentFacility: self.currentNearFacilities[indexPath.row])
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell:UICollectionViewCell!
-        let currentFacility  = self.currentNearFacilities[indexPath.row]
-        let facilitiesTableViewCell: FacilitiesCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "FacilitiesCollectionViewCell", for: indexPath as IndexPath) as! FacilitiesCollectionViewCell
-        if let currentLat = self.facilityDetailPresenter?.currentPlaceUser().coordinate.latitude, let currentLong = self.facilityDetailPresenter?.currentPlaceUser().coordinate.longitude{
-            if indexPath.row == 0 {
-                facilitiesTableViewCell.configureWithFacility(currentFacility: currentFacility,currentLat: currentLat, currentLong:currentLong,isFirstCell:true,needFavouriteAction: false)
-            }else{
-                facilitiesTableViewCell.configureWithFacility(currentFacility: currentFacility,currentLat: currentLat, currentLong:currentLong,isFirstCell:false,needFavouriteAction: false)
-            }
-        }
-        cell = facilitiesTableViewCell
-        return cell
     }
 }
 

@@ -292,12 +292,6 @@ class FacilityDetailPresenter: NSObject {
 }
 
 
-extension FacilityDetailPresenter : FacilityActionDelegate{
-    func finalActionStepAndBackToReservations() {
-        self.transitionToBackListAndChangeToReservation()
-    }
-}
-
 //
 // MARK: - Transition Methods
 //
@@ -331,11 +325,6 @@ extension FacilityDetailPresenter{
         RouterManager.shared.visibleViewController?.dismiss(animated: true, completion: {
             RouterManager.shared.visibleViewController?.present(facilityFlexibleHeaderContainerViewController, animated: true, completion: nil)
         })
-    }
-    
-    func transitionToFacilitySummary(lightReservation:AlLightReservation){
-        let facilitySummaryViewController:FacilitySummaryViewController = FacilitySummaryViewController.instantiate(lightReservation:lightReservation,currentNavigationDelegate: self)
-        RouterManager.shared.visibleViewController?.present(facilitySummaryViewController, animated: true, completion: nil)
     }
     
     func transitionToLogin(lightReservation:AlLightReservation){
