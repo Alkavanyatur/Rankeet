@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FacilityDetailFieldView" customModule="Aluzina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aoc-iO-eXl">
+                    <rect key="frame" x="0.0" y="0.0" width="335" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pista 1 - Muro individual" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdA-GI-EfV">
+                            <rect key="frame" x="20" y="14" width="295" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <color key="textColor" red="0.38823529411764707" green="0.38823529411764707" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENCENDIDO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCR-Hz-ifJ">
+                            <rect key="frame" x="20" y="43" width="268" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.38823529411764707" green="0.38823529411764707" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgSmallcardLightsoff.png" translatesAutoresizingMaskIntoConstraints="NO" id="3Vs-lJ-zcF">
+                            <rect key="frame" x="293" y="43" width="22" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="22" id="R9I-8N-Geu"/>
+                                <constraint firstAttribute="height" constant="20" id="z3x-Oh-Tpj"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95675891637802124" green="0.95692259073257446" blue="0.95674854516983032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="vCR-Hz-ifJ" firstAttribute="leading" secondItem="Aoc-iO-eXl" secondAttribute="leading" constant="20" id="4vi-yg-Xmf"/>
+                        <constraint firstAttribute="height" constant="80" id="Lyh-Ii-SUb"/>
+                        <constraint firstItem="3Vs-lJ-zcF" firstAttribute="leading" secondItem="vCR-Hz-ifJ" secondAttribute="trailing" constant="5" id="NHr-VO-dQI"/>
+                        <constraint firstItem="vCR-Hz-ifJ" firstAttribute="top" secondItem="YdA-GI-EfV" secondAttribute="bottom" constant="5" id="Pm8-w5-lUq"/>
+                        <constraint firstItem="YdA-GI-EfV" firstAttribute="top" secondItem="Aoc-iO-eXl" secondAttribute="top" constant="14" id="RGj-ft-BkR"/>
+                        <constraint firstAttribute="trailing" secondItem="YdA-GI-EfV" secondAttribute="trailing" constant="20" id="Uw8-NJ-qJM"/>
+                        <constraint firstItem="YdA-GI-EfV" firstAttribute="leading" secondItem="Aoc-iO-eXl" secondAttribute="leading" constant="20" id="VFV-qn-sLa"/>
+                        <constraint firstAttribute="trailing" secondItem="3Vs-lJ-zcF" secondAttribute="trailing" constant="20" id="eV4-2k-4wA"/>
+                        <constraint firstAttribute="bottom" secondItem="3Vs-lJ-zcF" secondAttribute="bottom" constant="17" id="y0e-RP-T8S"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeX-Tc-8Av">
+                    <rect key="frame" x="0.0" y="0.0" width="335" height="80"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="XgZ-Vv-cnJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Aoc-iO-eXl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5Yu-R6-Lu2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="WeX-Tc-8Av" secondAttribute="bottom" id="9H2-T5-tcx"/>
+                <constraint firstItem="WeX-Tc-8Av" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="K4e-oh-coi"/>
+                <constraint firstItem="WeX-Tc-8Av" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="SXb-eC-Omg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WeX-Tc-8Av" secondAttribute="trailing" id="TMf-oD-Hzq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Aoc-iO-eXl" secondAttribute="trailing" id="ZZ3-Ea-KXy"/>
+                <constraint firstItem="Aoc-iO-eXl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="faI-ty-vsG"/>
+                <constraint firstAttribute="bottom" secondItem="Aoc-iO-eXl" secondAttribute="bottom" id="zVc-Rs-cW4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="buttonAction" destination="WeX-Tc-8Av" id="VQW-L3-fHk"/>
+                <outlet property="contentView" destination="Aoc-iO-eXl" id="ceb-SM-cfS"/>
+                <outlet property="imageField" destination="3Vs-lJ-zcF" id="SIy-t7-pGo"/>
+                <outlet property="stateField" destination="vCR-Hz-ifJ" id="tet-ub-pIR"/>
+                <outlet property="titleView" destination="YdA-GI-EfV" id="vVp-xi-QsO"/>
+            </connections>
+            <point key="canvasLocation" x="22.5" y="-562"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgSmallcardLightsoff.png" width="22" height="20"/>
+    </resources>
+</document>

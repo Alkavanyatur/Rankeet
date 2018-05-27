@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YNw-XV-aFe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="1Qk-h3-XN7">
+            <objects>
+                <viewController id="YNw-XV-aFe" customClass="SplashViewController" customModule="Rankeet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qJM-0M-GfL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ed0-La-8Al">
+                                <rect key="frame" x="0.0" y="209.5" width="375" height="48"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Rank">
+                                        <attributes>
+                                            <color key="NSColor" red="0.40522313119999998" green="0.2348828912" blue="0.71655493969999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="40" name="Somatic-Rounded"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="eet">
+                                        <attributes>
+                                            <color key="NSColor" red="0.17496749758720398" green="0.52926677465438843" blue="0.88217300176620483" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="40" name="Somatic-Rounded"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUx-IJ-rW0" customClass="GradientView" customModule="Rankeet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qk1-Z0-RkG">
+                                        <rect key="frame" x="0.0" y="209.5" width="375" height="48"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Rank">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="40" name="Somatic-Rounded"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="eet">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.41960784313725491" green="0.85490196078431369" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="40" name="Somatic-Rounded"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Qk1-Z0-RkG" firstAttribute="centerY" secondItem="xUx-IJ-rW0" secondAttribute="centerY" constant="-100" id="st7-6r-zKz"/>
+                                    <constraint firstItem="Qk1-Z0-RkG" firstAttribute="leading" secondItem="xUx-IJ-rW0" secondAttribute="leading" id="u0l-QJ-vLW"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qk1-Z0-RkG" secondAttribute="trailing" id="wNX-4C-vdw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.40522313119999998" green="0.2348828912" blue="0.71655493969999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.1764705882" green="0.52926677470000005" blue="0.88217300180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointX">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QIi-CD-qdC" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="167" y="313" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="bpP-3Z-9Yi"/>
+                                    <constraint firstAttribute="height" constant="40" id="wNd-Nx-UZS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="ballScaleMultiple"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.41960784309999999" green="0.85490196080000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ed0-La-8Al" firstAttribute="trailing" secondItem="zAb-CY-YQm" secondAttribute="trailing" id="BOE-8y-2zE"/>
+                            <constraint firstItem="QIi-CD-qdC" firstAttribute="centerY" secondItem="qJM-0M-GfL" secondAttribute="centerY" id="Fgv-uN-PC2"/>
+                            <constraint firstItem="zAb-CY-YQm" firstAttribute="trailing" secondItem="xUx-IJ-rW0" secondAttribute="trailing" id="L2f-cu-SQB"/>
+                            <constraint firstItem="xUx-IJ-rW0" firstAttribute="leading" secondItem="zAb-CY-YQm" secondAttribute="leading" id="PHW-6v-WcT"/>
+                            <constraint firstItem="QIi-CD-qdC" firstAttribute="centerX" secondItem="qJM-0M-GfL" secondAttribute="centerX" id="SQy-uj-e6K"/>
+                            <constraint firstItem="ed0-La-8Al" firstAttribute="leading" secondItem="zAb-CY-YQm" secondAttribute="leading" id="U3g-io-hQ4"/>
+                            <constraint firstAttribute="bottom" secondItem="xUx-IJ-rW0" secondAttribute="bottom" id="UQT-Zc-gjq"/>
+                            <constraint firstItem="xUx-IJ-rW0" firstAttribute="top" secondItem="qJM-0M-GfL" secondAttribute="top" id="fUa-Yg-uzk"/>
+                            <constraint firstItem="ed0-La-8Al" firstAttribute="centerY" secondItem="qJM-0M-GfL" secondAttribute="centerY" constant="-100" id="yal-f1-nPD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zAb-CY-YQm"/>
+                    </view>
+                    <connections>
+                        <outlet property="indicatorSplash" destination="QIi-CD-qdC" id="TDu-BC-Cf6"/>
+                        <outlet property="splashView" destination="xUx-IJ-rW0" id="s0C-zb-4X1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="beI-rN-3Jw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-85.599999999999994" y="-1455.0224887556224"/>
+        </scene>
+    </scenes>
+</document>

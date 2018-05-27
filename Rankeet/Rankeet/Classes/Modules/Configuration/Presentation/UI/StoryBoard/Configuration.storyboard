@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Black</string>
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Notifications View Controller-->
+        <scene sceneID="oG7-Mn-HXh">
+            <objects>
+                <viewController storyboardIdentifier="notificationsViewController" id="StG-7q-IIC" customClass="NotificationsViewController" customModule="Aluzina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ekp-U3-QDr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDD-kc-NJW">
+                                <rect key="frame" x="5" y="50" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JEj-j3-GWf"/>
+                                    <constraint firstAttribute="width" constant="50" id="aXf-WT-fGK"/>
+                                </constraints>
+                                <state key="normal" image="close.png"/>
+                                <connections>
+                                    <action selector="backAction:" destination="StG-7q-IIC" eventType="touchUpInside" id="XVd-Pg-W28"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activa las notificacines" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdH-6U-fBr">
+                                <rect key="frame" x="15" y="120" width="345" height="44"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="32"/>
+                                <color key="textColor" red="0.199973762" green="0.2000150383" blue="0.19997116919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKB-BZ-8aI">
+                                <rect key="frame" x="15" y="595" width="345" height="52"/>
+                                <color key="backgroundColor" red="0.199973762" green="0.2000150383" blue="0.19997116919999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="riD-S3-g4z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Activa las notificaciones"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="notificationsAction:" destination="StG-7q-IIC" eventType="touchUpInside" id="KDc-e3-46Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NdH-6U-fBr" secondAttribute="trailing" constant="15" id="IB5-Xt-s5w"/>
+                            <constraint firstItem="Wh3-eC-E3R" firstAttribute="trailing" secondItem="yKB-BZ-8aI" secondAttribute="trailing" constant="15" id="PFh-u0-DCt"/>
+                            <constraint firstItem="yKB-BZ-8aI" firstAttribute="leading" secondItem="Wh3-eC-E3R" secondAttribute="leading" constant="15" id="aCv-pk-1zt"/>
+                            <constraint firstItem="NdH-6U-fBr" firstAttribute="top" secondItem="eDD-kc-NJW" secondAttribute="bottom" constant="20" id="bTp-82-NRC"/>
+                            <constraint firstItem="NdH-6U-fBr" firstAttribute="leading" secondItem="ekp-U3-QDr" secondAttribute="leading" constant="15" id="kiG-6m-lnY"/>
+                            <constraint firstItem="eDD-kc-NJW" firstAttribute="top" secondItem="Wh3-eC-E3R" secondAttribute="top" constant="30" id="nSM-Ek-JPE"/>
+                            <constraint firstItem="eDD-kc-NJW" firstAttribute="leading" secondItem="Wh3-eC-E3R" secondAttribute="leading" constant="5" id="old-q1-Dow"/>
+                            <constraint firstItem="Wh3-eC-E3R" firstAttribute="bottom" secondItem="yKB-BZ-8aI" secondAttribute="bottom" constant="20" id="sfd-CD-e9h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wh3-eC-E3R"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelNotifications" destination="NdH-6U-fBr" id="tUW-3r-wUj"/>
+                        <outlet property="notificationsButton" destination="yKB-BZ-8aI" id="0tn-FQ-YNw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGe-kj-ge7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961" y="140"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close.png" width="18" height="18"/>
+    </resources>
+</document>

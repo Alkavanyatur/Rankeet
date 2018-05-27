@@ -1,0 +1,39 @@
+platform :ios, '9.0'
+use_frameworks!
+
+def shared_pods
+	pod 'Alamofire', '~> 4.5'
+    pod 'AlamofireImage', '~> 3.3'
+    
+    pod 'Firebase/Core'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Messaging'
+    pod 'Firebase/RemoteConfig'
+    pod 'GoogleSignIn'
+    pod 'GooglePlaces'
+    pod 'FBSDKLoginKit'
+    
+    pod 'Material'
+    pod 'MaterialComponents/AppBar'
+    pod 'MaterialComponents/PageControl'
+    
+    pod 'ViewAnimator'
+    pod 'RealmSwift'
+    pod 'ObjectMapper+Realm'
+	pod 'SwiftyJSON'
+    pod 'ObjectMapper', '~> 3.1'
+    pod 'SwiftyUserDefaults'
+    pod 'DateToolsSwift'
+
+    pod 'FaveButton', :git => 'https://github.com/okipol88/fave-button', :branch => 'feature/selectionWithoutAnimation'
+    pod 'lottie-ios'
+    pod 'PopupDialog', '~> 0.7'
+    pod 'Hero'
+    pod 'NVActivityIndicatorView'
+    pod 'SkeletonView'
+end
+
+target 'Rankeet' do
+    shared_pods
+end
+

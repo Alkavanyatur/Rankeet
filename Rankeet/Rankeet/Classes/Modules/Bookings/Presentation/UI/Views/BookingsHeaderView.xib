@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BookingsHeaderView" customModule="Aluzina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@bookings_reservation_title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtW-rH-6bk">
+                    <rect key="frame" x="20" y="51.5" width="446.5" height="41"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yv2-sz-tGh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@bookings_reservation_title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2G-Dx-Yx2">
+                            <rect key="frame" x="0.0" y="10" width="375" height="114"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.057667531073093414" green="0.80113822221755981" blue="0.82016474008560181" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="F2G-Dx-Yx2" secondAttribute="bottom" id="TCZ-Mi-sL0"/>
+                        <constraint firstAttribute="trailing" secondItem="F2G-Dx-Yx2" secondAttribute="trailing" id="TjN-Ja-Knk"/>
+                        <constraint firstItem="F2G-Dx-Yx2" firstAttribute="top" secondItem="Yv2-sz-tGh" secondAttribute="top" constant="10" id="lV7-tk-WmV"/>
+                        <constraint firstItem="F2G-Dx-Yx2" firstAttribute="leading" secondItem="Yv2-sz-tGh" secondAttribute="leading" id="y9b-Rt-BJY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LtW-rH-6bk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="10" id="3J2-qf-pJk"/>
+                <constraint firstItem="Yv2-sz-tGh" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="5Cc-Cp-eaI"/>
+                <constraint firstItem="Yv2-sz-tGh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7R7-X9-Ybj"/>
+                <constraint firstItem="Yv2-sz-tGh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EyE-5b-A4h"/>
+                <constraint firstItem="Yv2-sz-tGh" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="loX-Ua-5KO"/>
+                <constraint firstItem="LtW-rH-6bk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="sfm-MY-Brh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="collapsableView" destination="Yv2-sz-tGh" id="E0b-P4-ioL"/>
+                <outlet property="expandableLabel" destination="LtW-rH-6bk" id="Yof-FM-ibZ"/>
+                <outlet property="reservations" destination="F2G-Dx-Yx2" id="nM1-VH-I0d"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-83"/>
+        </view>
+    </objects>
+</document>

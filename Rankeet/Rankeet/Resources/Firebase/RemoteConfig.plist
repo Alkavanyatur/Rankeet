@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>iosAppMinVersion</key>
+	<string>1</string>
+	<key>needShowOnboarding</key>
+	<true/>
+	<key>sports</key>
+	<string>1,2,3;Fútbol|4,5,6;Baloncesto|7;Balonmano|8;Voleibol|9;Patinaje|10;Skate|11;Hockey Patines|12;Tenis|13;Pádel|14;Ping Pong|15;Frontón|16;Running|17;Petanca|18;Chito|19;Calva|20;Multideporte|21;Rocódromo</string>
+	<key>gapTimeReservation</key>
+	<string>30</string>
+	<key>numGapAllowed</key>
+	<string>3</string>
+	<key>androidAppMinVersion</key>
+	<string>1</string>
+</dict>
+</plist>
