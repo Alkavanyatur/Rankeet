@@ -615,15 +615,15 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TS4-nG-hxK">
                                                 <rect key="frame" x="20" y="14" width="335" height="32"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rqh-BS-3rZ">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rqh-BS-3rZ">
                                                         <rect key="frame" x="300" y="0.0" width="35" height="32"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="35" id="Way-Ic-uOV"/>
                                                             <constraint firstAttribute="height" constant="32" id="zTh-5U-66b"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mt-74-Cue">
-                                                        <rect key="frame" x="0.0" y="10" width="285" height="12"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mt-74-Cue">
+                                                        <rect key="frame" x="0.0" y="0.0" width="285" height="32"/>
                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                         <color key="textColor" red="0.057667531073093414" green="0.80113822221755981" blue="0.82016474008560181" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -633,9 +633,9 @@
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="9mt-74-Cue" secondAttribute="trailing" constant="50" id="Rn5-h8-CMo"/>
                                                     <constraint firstItem="9mt-74-Cue" firstAttribute="leading" secondItem="TS4-nG-hxK" secondAttribute="leading" id="SUX-gS-2ZH"/>
-                                                    <constraint firstItem="9mt-74-Cue" firstAttribute="top" secondItem="TS4-nG-hxK" secondAttribute="top" constant="10" id="WQR-wB-sEU"/>
+                                                    <constraint firstItem="9mt-74-Cue" firstAttribute="top" secondItem="TS4-nG-hxK" secondAttribute="top" id="WQR-wB-sEU"/>
                                                     <constraint firstAttribute="trailing" secondItem="rqh-BS-3rZ" secondAttribute="trailing" id="aEx-a0-NKk"/>
-                                                    <constraint firstAttribute="bottom" secondItem="9mt-74-Cue" secondAttribute="bottom" constant="10" id="lGf-2I-Sn6"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9mt-74-Cue" secondAttribute="bottom" id="lGf-2I-Sn6"/>
                                                     <constraint firstItem="rqh-BS-3rZ" firstAttribute="centerY" secondItem="9mt-74-Cue" secondAttribute="centerY" id="omQ-5E-TeZ"/>
                                                     <constraint firstItem="rqh-BS-3rZ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TS4-nG-hxK" secondAttribute="top" id="pSv-B1-Ib6"/>
                                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rqh-BS-3rZ" secondAttribute="bottom" id="uGN-sW-j2s"/>
@@ -1147,7 +1147,7 @@
                                                                 <color key="value" red="0.34081590175628662" green="0.18178316950798035" blue="0.80511277914047241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                                                <color key="value" red="0.18575674295425415" green="0.41875272989273071" blue="0.95158809423446655" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="value" red="0.18575674295425415" green="0.41875272989273071" blue="0.95158809423446655" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
                                                                 <real key="value" value="0.0"/>
@@ -1328,7 +1328,7 @@
                                                                     </fragment>
                                                                     <fragment content="Pro">
                                                                         <attributes>
-                                                                            <color key="NSColor" red="0.82893389463424683" green="0.07974155992269516" blue="0.21865376830101013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <color key="NSColor" red="0.82893389463424683" green="0.07974155992269516" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <font key="NSFont" size="21" name="Futura-Medium"/>
                                                                         </attributes>
                                                                     </fragment>
@@ -1353,7 +1353,7 @@
                                                                 <color key="value" red="0.34081590179999999" green="0.18178316950000001" blue="0.80511277910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                                                <color key="value" red="0.185756743" green="0.41875272990000001" blue="0.95158809420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="value" red="0.185756743" green="0.41875272990000001" blue="0.95158809420000001" alpha="0.8567341549295775" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
                                                                 <real key="value" value="0.0"/>
